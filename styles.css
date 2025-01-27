@@ -157,11 +157,15 @@ h3 {
     background-position: 0px 100px;
     background-repeat: no-repeat;
   }
+  #aboutBanner h2 {
+    font-size: 15px;
+    padding: 18px;
+  }
   #navbar #menu {
     padding: 5px 10px;
   }
   #mobileNAVBAR {
-    height: 430px;
+    height: 380px;
   }
   #mobileNAVBAR h1 {
     font-size: 20px;
