@@ -36,24 +36,38 @@
           font-family: Geist Mono, Montserrat, monospace;
         }
       }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 900px) {
         #announcement {
-          font-size: 13px;
+          top: 70px;
+          height: 50px;
+          h3 {
+            font-size: 2vw;
+            padding: 0 auto;
+          }
         }
         #announcement.an2 {
-          font-size: 13px;
+          top: 70px;
+          height: 50px;
+          h3 {
+            font-size: 2vw;
+            padding: 0 auto;
+          }
         }
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 700px) {
         #announcement {
           top: 100px;
-          height: 30px;
-          font-size: 7px;
+          height: 40px;
+          h3 {
+            font-size: 2vw;
+          }
         }
         #announcement.an2 {
           top: 100px;
-          height: 30px;
-          font-size: 7px;
+          height: 40px;
+          h3 {
+            font-size: 2vw;
+          }
         }
       }
       #announcement.hide {
@@ -121,6 +135,9 @@
     if (date.getDate() === 8 && date.getMonth() === 1 && date.getFullYear() === 2025 && date.getHours() >= 9) {
       document.getElementById("announcementCONT").innerHTML = ("We are live at Peekskill for the FTC NY Excelsior Qualifier ->");
       document.getElementById("announcement").classList.add("an2");
+    }
+    if (date.getDate() > 8) {
+      document.getElementById("announcement").classList.add("hide");
     }
   </script>
 </html>
