@@ -10,6 +10,55 @@
         padding-left: 10px;
         padding-right: 10px;
       }
+      #announcement {
+        margin: 0;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: rgb(19, 12, 114);
+        color: white;
+        h3 {
+          font-family: Geist Mono, Montserrat, monospace;
+        }
+      }
+      #announcement.an2 {
+        background-color: rgb(117, 24, 24);
+        margin: 0;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        color: white;
+        h3 {
+          font-family: Geist Mono, Montserrat, monospace;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        #announcement {
+          font-size: 13px;
+        }
+        #announcement.an2 {
+          font-size: 13px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        #announcement {
+          top: 100px;
+          height: 40px;
+          font-size: 10px;
+        }
+        #announcement.an2 {
+          top: 100px;
+          height: 40px;
+          font-size: 10px;
+        }
+      }
+      #announcement.hide {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -26,6 +75,9 @@
       <h1 id="linkTO-aboutMOB">ABOUT THE TEAM</h1>
       <h1 id="linkTO-contactMOB">CONTACT US</h1>
       <h1 id="linkTO-resourcesMOB">RESOURCES</h1>
+    </div>
+    <div id="announcement">
+      <h3 id="announcementCONT">Our next FTC Qualifier will be commencing soon at Peekskill High School -></h3>
     </div>
     <div id="aboutBanner">
       <div class="mobileBR">
@@ -49,7 +101,6 @@
   </div>
   <br>
   <h1 class="montserratFONT">UPCOMING EVENTS</h1>
-  <h2 class="event">FEB 3 - BHS Bake Sale Fundraiser</h2>
   <h2 class="event">FEB 8 - FTC Peekskill Qualifier</h2>
   <br>
   <div class="footer">
@@ -61,4 +112,15 @@
   </div>
   </body>
   <script src="main.js"></script>
+  <script>
+    document.getElementById("announcement").onclick = function() {
+      window.location.href = "https://www.youtube.com/watch?v=VI--8J4OiWk";
+    }
+    const date = new Date();
+    //console.log(date.getMonth());
+    if (date.getDate() === 8 && date.getMonth() === 1 && date.getFullYear() === 2025 && date.getHours() >= 9) {
+      document.getElementById("announcementCONT").innerHTML = ("We are live at Peekskill for the FTC NY Excelsior Qualifier ->");
+      document.getElementById("announcement").classList.add("an2");
+    }
+  </script>
 </html>

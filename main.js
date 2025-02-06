@@ -39,7 +39,13 @@ document.getElementById("menu").onclick = function () {
   const mobBAR = document.getElementById("mobileNAVBAR");
   if (mobBAR.classList.contains("hidebar")) {
     mobBAR.classList.remove("hidebar");
+    if (document.getElementById("announcement") != null) {
+      document.getElementById("announcement").classList.add("hide");
+    }
   } else {
     mobBAR.classList.add("hidebar");
+    if (document.getElementById("announcement") != null) {
+      document.getElementById("announcement").classList.remove("hide");
+    }
   }
 };
