@@ -44,8 +44,8 @@ h3 {
 #navbar img {
   float: left;
   display: block;
-  width: 380px;
-  height: auto;
+  width: auto;
+  height: 70px;
 }
 #navbar h1 {
   font-family: Montserrat, Geist Mono, monospace;
@@ -138,18 +138,20 @@ h3 {
   }
   #navbar #menu {
     display: block;
-    padding-bottom: 5px;
+    width: auto;
+    height: 50px;
+    padding: 0.5vw 0px;
   }
   #mobileNAVBAR {
     display: inline;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #navbar img {
-    width: 45%;
-    height: auto;
-    padding: 20px 0px;
+    width: auto;
+    height: 50px;
+    padding: 3.7% 0px;
   }
   #navbar {
     height: 80px;
@@ -163,7 +165,8 @@ h3 {
     padding: 18px;
   }
   #navbar #menu {
-    padding: 5px 10px;
+    height: 50px;
+    padding: 2.5vw 0px;
   }
   #mobileNAVBAR {
     height: 380px;
