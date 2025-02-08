@@ -90,9 +90,11 @@
       <h1 id="linkTO-contactMOB">CONTACT US</h1>
       <h1 id="linkTO-resourcesMOB">RESOURCES</h1>
     </div>
+    <!--
     <div id="announcement">
       <h3 id="announcementCONT">Our next FTC Qualifier will be commencing soon at Peekskill High School -></h3>
     </div>
+    -->
     <div id="aboutBanner">
       <div class="mobileBR">
         <br><br>
@@ -126,18 +128,4 @@
   </div>
   </body>
   <script src="main.js"></script>
-  <script>
-    document.getElementById("announcement").onclick = function() {
-      window.location.href = "https://www.youtube.com/watch?v=7U5fywHmzB8";
-    }
-    const date = new Date();
-    //console.log(date.getMonth());
-    if (date.getDate() === 8 && date.getMonth() === 1 && date.getFullYear() === 2025 && date.getHours() >= 9) {
-      document.getElementById("announcementCONT").innerHTML = ("We are live at Peekskill for the FTC NY Excelsior Qualifier ->");
-      document.getElementById("announcement").classList.add("an2");
-    }
-    if (date.getDate() > 8) {
-      document.getElementById("announcement").classList.add("hide");
-    }
-  </script>
 </html>
