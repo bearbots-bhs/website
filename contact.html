@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - BearBots</title>
+    <style>
+      .backgroundSky {
+        padding: 50px;
+      }
+      .button {
+        background-color: rgb(16, 15, 105);
+        border-radius: 25px;
+        margin: 10px 15%;
+        padding: 10px;
+        color: white;
+      }
+      h2 {
+        font-family: Montserrat;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+      }
+      #con1 {
+        background-color: darkorange;
+      }
+      #con2 {
+        background-color: rgb(255, 166, 0);
+      }
+      #con3 {
+        background-color: darkorange;
+      }
+
+      @media screen and (max-width: 600px) {
+        .button {
+          font-size: 15px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="images/logoMain.png" id="logoMain" />
+      <img src="images/menuIcon.png" id="menu">
+      <h1 id="linkTO-fundraisers">FUNDRAISERS</h1>
+      <h1 id="linkTO-about">ABOUT THE TEAM</h1>
+      <h1 id="linkTO-contact">CONTACT US</h1>
+      <h1 id="linkTO-resources">RESOURCES</h1>
+    </div>
+    <div class="hidebar" id="mobileNAVBAR">
+      <h1 id="linkTO-fundraisersMOB">FUNDRAISERS</h1>
+      <h1 id="linkTO-aboutMOB">ABOUT THE TEAM</h1>
+      <h1 id="linkTO-contactMOB">CONTACT US</h1>
+      <h1 id="linkTO-resourcesMOB">RESOURCES</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>How to Contact Us</h1>
+    <br />
+    <br />
+    <div id="con1">
+      <br>
+      <h2>You can reach out to our mentors<h2>
+      <h3 class="button">Christopher Lo - clo@briarcliffschools.org</h3>
+      <h3 class="button">Theodore Sandomenico - tsandomenico@briarcliffschools.org</h3>
+      <br>
+    </div>
+    <div id="con2">
+      <br>
+      <h2>You can contact us through our club email</h2>
+      <h3 class="button">bhsroboteam@gmail.com</h3>
+      <br>
+    </div>
+    <div id="con3">
+      <br>
+      <h2>You can follow us on Instagram</h2>
+      <h3 class="button" id="linkINSTA">- Visit Page -</h3>
+      <br>
+    </div>
+    <br>
+    <br>
+    <h3> We will respond to emails as soon as possible!</h3>
+    <br>
+    <br>
+    <div class="footer">
+      <img src="images/instaLOGO.png" id="linkTO-insta">
+      <h3 id="sitemapLINK">
+        Sitemap
+      </h3>
+      <h3>©BearBots BHS</h3>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("linkINSTA").onclick = function() {
+      window.location.href = "https://www.instagram.com/bhsbearbots/";
+    }
+  </script>
+</html>

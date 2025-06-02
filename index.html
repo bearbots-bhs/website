@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BearBots</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #announcement {
+        margin: 0;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: rgb(19, 12, 114);
+        color: white;
+        h3 {
+          font-family: Geist Mono, Montserrat, monospace;
+        }
+      }
+      #announcement.an2 {
+        background-color: rgb(117, 24, 24);
+        margin: 0;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        height: 60px;
+        color: white;
+        h3 {
+          font-family: Geist Mono, Montserrat, monospace;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        #announcement {
+          top: 70px;
+          height: 50px;
+          h3 {
+            font-size: 2vw;
+            padding: 0 auto;
+          }
+        }
+        #announcement.an2 {
+          top: 70px;
+          height: 50px;
+          h3 {
+            font-size: 2vw;
+            padding: 0 auto;
+          }
+        }
+      }
+      @media screen and (max-width: 700px) {
+        #announcement {
+          top: 100px;
+          height: 40px;
+          h3 {
+            font-size: 2vw;
+          }
+        }
+        #announcement.an2 {
+          top: 100px;
+          height: 40px;
+          h3 {
+            font-size: 2vw;
+          }
+        }
+      }
+      #announcement.hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="images/logoMain.png" id="logoMain" />
+      <img src="images/menuIcon.png" id="menu">
+      <h1 id="linkTO-fundraisers">FUNDRAISERS</h1>
+      <h1 id="linkTO-about">ABOUT THE TEAM</h1>
+      <h1 id="linkTO-contact">CONTACT US</h1>
+      <h1 id="linkTO-resources">RESOURCES</h1>
+    </div>
+    <div class="hidebar" id="mobileNAVBAR">
+      <h1 id="linkTO-fundraisersMOB">FUNDRAISERS</h1>
+      <h1 id="linkTO-aboutMOB">ABOUT THE TEAM</h1>
+      <h1 id="linkTO-contactMOB">CONTACT US</h1>
+      <h1 id="linkTO-resourcesMOB">RESOURCES</h1>
+    </div>
+    <!--
+    <div id="announcement">
+      <h3 id="announcementCONT">Our next FTC Qualifier will be commencing soon at Peekskill High School -></h3>
+    </div>
+    -->
+    <div id="aboutBanner">
+      <div class="mobileBR">
+        <br><br>
+      </div>
+      <h2 id="aboutBanner_text">We are BearBots</h1>
+      <div class="mobileBR">
+        <br><br>
+      </div>
+    </div>
+    <br />
+    <h1>WE ARE TEAM 20805 FROM BRIARCLIFF MANOR, NY</h1>
+    <h3>We are a FIRST Tech Challenge team made up of students of all ages at Briarcliff Manor High School<br>
+    We are committed to teaching BHS Students practical STEM & Engineering skills<br><br>
+  Into the Deep - 2024/2025 marks our 3rd year of competition</h3>
+  <br>
+  <div class="backgroundSky">
+    <h1>Meeting Schedule</h1>
+    <h3>Room 121</h3>
+    <h3>Every Wednesday and Thursday from 3:00-3:40 PM</h3>
+    <h4 style="font-family: Montserrat; margin: 10px; text-align: center;">Last meeting of the 2024-2025 season will be on May 28th</h4>
+  </div>
+  <br>
+  <h1 class="montserratFONT">UPCOMING EVENTS</h1>
+  <h2 class="event">None</h2>
+  <br>
+  <div class="footer">
+    <img src="images/instaLOGO.png" id="linkTO-insta">
+    <h3 id="sitemapLINK">
+      Sitemap
+    </h3>
+    <h3>©BearBots BHS</h3>
+  </div>
+  </body>
+  <script src="main.js"></script>
+</html>
