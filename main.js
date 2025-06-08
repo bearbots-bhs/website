@@ -1,3 +1,5 @@
+window.location.href = "bearbots-bhs.github.io";
+
 document.getElementById("logoMain").onclick = function () {
   window.location.href = "index.html";
 };
